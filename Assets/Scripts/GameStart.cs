@@ -7,7 +7,6 @@ public class GameStart : MonoBehaviour
     public DataPersistanceManager dpm;
     public Tutorial tut;
     void Start() {
-        tut.ShowTutorial();
         dpm.LoadGame();
         gameObject.SetActive(true); //set Start game object to true
     }

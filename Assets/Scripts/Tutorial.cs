@@ -1,29 +1,20 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Tutorial : MonoBehaviour
 {
-    public GameObject tutPage1;
-    public GameObject tutPage2;
-    public GameObject tutPage3;
-    public GameObject tutPage4;
-    public GameObject tutPage5;
-    public GameObject tutPage6;
-    public GameObject tutPage7;
 
-    public GameObject[] tutPages; //array for the tutorial pages
-    public int currentActiveTutPgIndex;
+    public List<GameObject> tutPages; //list for the tutorial pages
+    private int currentActiveTutPgIndex;
+    public GameObject startPage;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
     public void ShowTutorial()
     {
         //show first tutorial slide
-        tutPage1.SetActive(true);
-        Update();
-    }
-    void Start()
-    {
-        
+        tutPages[0].SetActive(true);
+        currentActiveTutPgIndex = 0;
     }
 
     // Update is called once per frame
@@ -41,9 +32,10 @@ public class Tutorial : MonoBehaviour
 
         tutPages[currentActiveTutPgIndex].SetActive(false); //hide currently active tutorial page
 
-        if (currentActiveTutPgIndex >= tutPages.Length) //if at last image exit tut
+        if (currentActiveTutPgIndex == tutPages.Count - 1) //if at last image exit tut
         {
-            return;
+            startPage.SetActive(true);
+            gameObject.SetActive(false);
         }
         else
         {
