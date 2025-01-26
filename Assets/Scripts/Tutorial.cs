@@ -38,10 +38,19 @@ public class Tutorial : MonoBehaviour
 
     void ShowNextTutPage()
     {
+
         tutPages[currentActiveTutPgIndex].SetActive(false); //hide currently active tutorial page
-        //go to next page in sequence
-        currentActiveTutPgIndex++;
-        //show it
-        tutPages[currentActiveTutPgIndex].SetActive(false);
+
+        if (currentActiveTutPgIndex >= tutPages.Length) //if at last image exit tut
+        {
+            return;
+        }
+        else
+        {
+            //go to next page in sequence
+            currentActiveTutPgIndex++;
+            //show it
+            tutPages[currentActiveTutPgIndex].SetActive(true);
+        }
     }
 }

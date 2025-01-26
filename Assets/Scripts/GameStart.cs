@@ -9,6 +9,7 @@ public class GameStart : MonoBehaviour
     void Start() {
         tut.ShowTutorial();
         dpm.LoadGame();
+        gameObject.SetActive(true); //set Start game object to true
     }
     void Update()
     {
