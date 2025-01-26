@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Chicken_Walk_0: -2562012858001844379
+      Chicken_Walk_1: 3393423367135678318
+      Chicken_Walk_2: 3878880852419515856
+      Chicken_Walk_3: -6558183364867272590
+      Chicken_Walk_4: -1847122570973027211
+      Chicken_Walk_5: -5914636344038293378
+      Chicken_Walk_6: -7235369164350203761
+      Chicken_Walk_7: 2924898032666423429
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

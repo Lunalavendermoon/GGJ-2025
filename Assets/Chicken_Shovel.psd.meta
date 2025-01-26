@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Chicken_Shovel_0: -1600300478422790984
+      Chicken_Shovel_1: -6577079155094071141
+      Chicken_Shovel_2: -4511178307615638222
+      Chicken_Shovel_3: -971979966914868954
+      Chicken_Shovel_4: 2483144229669900029
+      Chicken_Shovel_5: -7264479025136127398
+      Chicken_Shovel_6: -3838345757689921007
+      Chicken_Shovel_7: -9027422408224600960
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -11,6 +11,8 @@ public class Timer: MonoBehaviour {
     public TextMeshProUGUI addedTimeText;
     public GameObject gameend;
     public GameManager gameManager;
+    //change 3: play ding sound when gaining time
+    public AudioSource dingSound;
 
     void Start() {
         targetTime = 10.0f;
@@ -32,6 +34,8 @@ public class Timer: MonoBehaviour {
     }
 
     public void AddTime(float amt) {
+        //change 3
+        dingSound.Play();
         targetTime += amt;
         StartCoroutine(DisplayTextRoutine(amt));
     }

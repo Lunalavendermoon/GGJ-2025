@@ -1,16 +1,22 @@
 fileFormatVersion: 2
-guid: 34ceb6846125f864d81b6d4aae1400e0
+guid: dbb4e7bb36dd77c4cb3bf18e7e5cfc74
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3028127818034952337
-    second: bubbling_level 3_0
+      213: -6965234399916166141
+    second: perfect level sparkle_0
   - first:
-      213: -8759696639675831666
-    second: bubbling_level 3_1
+      213: -8253897416147399979
+    second: perfect level sparkle_1
   - first:
-      213: 7045453025266664749
-    second: bubbling_level 3_2
+      213: -843223249715638727
+    second: perfect level sparkle_2
+  - first:
+      213: 6601423333355739484
+    second: perfect level sparkle_3
+  - first:
+      213: 8564954362576231518
+    second: perfect level sparkle_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bubbling_level 3_0
+      name: perfect level sparkle_0
       rect:
         serializedVersion: 2
-        x: 163
-        y: 439
-        width: 918
-        height: 831
+        x: 804
+        y: 1066
+        width: 73
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 198b370f432160a20800000000000000
-      internalID: 3028127818034952337
+      spriteID: 3047aa77734865f90800000000000000
+      internalID: -6965234399916166141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bubbling_level 3_1
+      name: perfect level sparkle_1
       rect:
         serializedVersion: 2
-        x: 1243
-        y: 439
-        width: 918
-        height: 831
+        x: 863
+        y: 926
+        width: 108
+        height: 193
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8a60fb215e4f6680800000000000000
-      internalID: -8759696639675831666
+      spriteID: 5da0502f704447d80800000000000000
+      internalID: -8253897416147399979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bubbling_level 3_2
+      name: perfect level sparkle_2
       rect:
         serializedVersion: 2
-        x: 2323
-        y: 439
-        width: 917
-        height: 831
+        x: 833
+        y: 1030
+        width: 9
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +171,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d2588b4b23a76c160800000000000000
-      internalID: 7045453025266664749
+      spriteID: 93e49560ce44c44f0800000000000000
+      internalID: -843223249715638727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perfect level sparkle_3
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 634
+        width: 71
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c59d4acbb87fc9b50800000000000000
+      internalID: 6601423333355739484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perfect level sparkle_4
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 726
+        width: 103
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5cd9ca1d94dcd670800000000000000
+      internalID: 8564954362576231518
       vertices: []
       indices: 
       edges: []
@@ -175,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bubbling_level 3_0: 3028127818034952337
-      bubbling_level 3_1: -8759696639675831666
-      bubbling_level 3_2: 7045453025266664749
+      perfect level sparkle_0: -6965234399916166141
+      perfect level sparkle_1: -8253897416147399979
+      perfect level sparkle_2: -843223249715638727
+      perfect level sparkle_3: 6601423333355739484
+      perfect level sparkle_4: 8564954362576231518
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

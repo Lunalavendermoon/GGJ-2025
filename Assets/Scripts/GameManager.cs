@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour
     private int selection;
     private bool changedColor = false;
 
+    //change 4: make sparkle appear for a bit when it is perfect
+    public GameObject sparkle;
+
     void Start() {
         
         Thresholds = new List<List<int>>
@@ -49,6 +52,8 @@ public class GameManager : MonoBehaviour
             pointsEarned = (int)(ChargeLevel / 10.0f + (float)ChargeLevel / (float)MaxCharge);
             if (ChargeLevel < Thresholds[selection][1] && ChargeLevel > Thresholds[selection][0]) {
                 pointsEarned = (int)(pointsEarned * 1.5);
+                //change 4
+                StartCoroutine(SparkleFlash());
             }
             timer.GetComponent<Timer>().AddTime(0.8f * pointsEarned / 10.0f);
             pointsTotal += pointsEarned;
@@ -58,6 +63,7 @@ public class GameManager : MonoBehaviour
             selection = Random.Range(0,4);
             MaxCharge = Thresholds[selection][1];
             currentscore.text = "score:" + pointsTotal;
+            
         }
 
         if (ChargeLevel == 0) {
@@ -123,6 +129,14 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
 
         sprites[selection].color = (Color)new Color32(255, 255, 255, 255);
+    }
+
+    //change 4
+    private IEnumerator SparkleFlash()
+    {
+        sparkle.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        sparkle.SetActive(false);
     }
 }
 
