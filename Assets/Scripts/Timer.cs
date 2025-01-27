@@ -33,11 +33,11 @@ public class Timer: MonoBehaviour {
 
     }
 
-    public void AddTime(float amt) {
+    public void AddTime(float amt, int pts) {
         //change 3
         dingSound.Play();
         targetTime += amt;
-        StartCoroutine(DisplayTextRoutine(amt));
+        StartCoroutine(DisplayTextRoutine(amt, pts));
     }
 
     public void EndTime() {
@@ -52,9 +52,9 @@ public class Timer: MonoBehaviour {
         targetTime = 10.0f;
     }
 
-    private IEnumerator DisplayTextRoutine(float amt)
+    private IEnumerator DisplayTextRoutine(float amt, int pts)
     {
-        addedTimeText.text = "+" + Mathf.Round(amt * 10.0f) * 0.1f + "s";
+        addedTimeText.text = "+" + Mathf.Round(amt * 10.0f) * 0.1f + " secs\n" + "+" + pts + " pts";
         addedTimeText.gameObject.SetActive(true);
 
         yield return new WaitForSeconds(1.0f);

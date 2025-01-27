@@ -11,6 +11,8 @@ public class GameEnd : MonoBehaviour
     public GameObject DeadEndText;
     public GameObject NormalEndText;
     public GameObject DeadEndImage;
+    public GameObject NormalEndImage;
+
     public DataPersistanceManager dpm;
     //public GameObject NormalEndImage;
     private bool ending;
@@ -43,6 +45,8 @@ public class GameEnd : MonoBehaviour
     {
         finalScoreText.text = "Score: " + Mathf.FloorToInt(Score.currentScore);
         NormalEndText.SetActive(true);
+        NormalEndImage.SetActive(true);
+
         //change 1
         resultScreenMusic.Play();
 
@@ -91,8 +95,12 @@ public class GameEnd : MonoBehaviour
     public void ResetEnding() {
         ending = false;
         NormalEndText.SetActive(false);
+        NormalEndImage.SetActive(false);
         DeadEndText.SetActive(false);
         DeadEndImage.SetActive(false);
+        stamp1.SetActive(false);
+        stamp2.SetActive(false);
+        stamp3.SetActive(false);
         highestScoreText.SetActive(false);
     }
 }

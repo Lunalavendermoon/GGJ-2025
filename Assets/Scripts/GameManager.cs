@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     private int MaxCharge;
     private List<List<int>> Thresholds;
     public List<AnimationManager> animations;
+    public GameObject flame;
     public List<SpriteRenderer> sprites;
     private bool ready = true;
 
@@ -55,7 +56,7 @@ public class GameManager : MonoBehaviour
                 //change 4
                 StartCoroutine(SparkleFlash());
             }
-            timer.GetComponent<Timer>().AddTime(0.8f * pointsEarned / 10.0f);
+            timer.GetComponent<Timer>().AddTime(0.8f * pointsEarned / 10.0f, pointsEarned);
             pointsTotal += pointsEarned;
             ChargeLevel = 0f; // Reset charge when mouse button is released
             changedColor = false;
@@ -67,6 +68,7 @@ public class GameManager : MonoBehaviour
         }
 
         if (ChargeLevel == 0) {
+            flame.SetActive(false);
             if (changedColor == false) {
                 StartCoroutine(ChangeColor());
                 changedColor = true;
@@ -74,6 +76,7 @@ public class GameManager : MonoBehaviour
             ActiveAnimation(0);
         }
         if (ChargeLevel > 0 && ChargeLevel < Thresholds[selection][0]) {
+            flame.SetActive(true);
             ActiveAnimation(1);
         }
         if (ChargeLevel > Thresholds[selection][0] && ChargeLevel < MaxCharge) {
@@ -81,6 +84,7 @@ public class GameManager : MonoBehaviour
         }            
         if (ChargeLevel >= MaxCharge) {
             Debug.Log("exploded!");
+            flame.SetActive(false);
             StartCoroutine(DisplayOverflow());
             pointsTotal = -1;
         }
